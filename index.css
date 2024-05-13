@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    padding: 20px;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    position: relative;
+    bottom: 390px;
+    left: 250px;
+}
+.logo{
+    height: 1px;
+    width: 1px;
+    position: relative;
+    z-index: 2;
+    top: 43px;
+    left: 100px;
+}
+.upper{
+    display: flex;
+    height: 50vh;
+}
+.upleft img{
+    height: 60vh;
+    width: 60vw;
+    z-index: 1;
+}
+.upright{
+    height: 60vh;
+    width: 40vw;
+    background-color: rgb(250, 245, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.upright h2{
+    width: 80%;
+    font-size: 30px;
+}
+.upright p{
+    width: 80%;
+    font-size: 14px;
+    margin-top: 20px;
+    color: rgb(119, 109, 109);
+    line-height: 1.5;
+}
+.shoparrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 340px;
+    left: 1027px;
+    letter-spacing: 5px;
+}   
+    .shoparrow img{
+        height: 10px;
+        width: 30px;
+}
+.angles{
+    background-color: black;
+    height: 30px;
+    width: 80px;
+    position: absolute;
+    left: 930px;
+    top: 409px;
+    z-index: 0;
+}   
+.ang{
+    background-color: rgb(0, 0, 0);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 50px;
+    top: 7px;
+    z-index: 2;
+}
+.ang1{
+    background-color: rgb(2, 3, 3);
+     height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 12px;
+    top: 7px;
+    z-index: 1;
+}
+.down{
+    display: flex;
+    height: 40vh;
+    margin-top: 63px;
+}
+.downleft img{
+    height: 40vh;
+    width: 30vw;
+}
+
+.downmiddle{
+    height: 40vh;
+    width: 40vw;
+    background-color: rgb(250, 245, 239);
+    padding: 50px;
+}
+.downmiddle h4{
+    font-size: 20px;
+}
+.downmiddle p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.downright img{
+    height: 40vh;
+    width: 31vw;
+}
+.fa-bars{
+    display: none;
+}
+
+
+@media screen and (max-width: 950px) {
+    /* .logo{
+        display: none;
+    } */
+    .fa-bars{
+        display: block;
+        position: relative;
+        bottom: 90%;
+        left: 10%;
+        color: white;
+        font-size: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+    }
+    .upleft img{
+        height: 50vh;
+        width: 100%;
+    }
+    .upright{
+        position: relative;
+        width: 100%;
+    }
+    .upright h2{
+        width: 100%;
+        font-size: 25px;
+    }
+    .upright p{
+        width: 100%;
+        font-size: 12.5px;
+    }
+    .angles{
+        background-color: black;
+        top: 48.5%;
+        left: 74.5%;
+    }
+
+    .shoparrow{
+        left: 18%;
+        top: 92%;
+        letter-spacing: 10px;
+    }
+    .down{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 230px;
+    }
+    .downleft img{
+        width: 100%;
+    }
+    .downmiddle{
+        width: 100%;
+    }
+    .downright img{
+        width: 100%;
+    }
+
+
+}
